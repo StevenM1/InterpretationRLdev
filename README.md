@@ -20,3 +20,6 @@ duration of the neural response lead to spurious individual differences in the n
 - scenarios_5_6.R contains code that covers the effects of differences in inverse temperatures and outcome sensitivity.
 
 - scenario_7_misspecification.R contains code that covers the model misspecification case of scenario 7. Note that this code slightly adapted some of the functions defined in simulation_functions.R; hence they're re-defined in there.
+
+
+The scenarios_manuscript_v1 folder contains code corresponding to the original submitted version of the manuscript.
