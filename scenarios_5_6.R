@@ -131,11 +131,12 @@ plot(gammas,variances3, bty='l', xlab=expression(paste('True ', gamma)), ylab='P
 legend('topleft', legend=paste0('r = ', round(cor(gammas,variances3),2)))
 
 plot(gammas,estimated_betas3, bty='l', xlab=expression(paste('True ', gamma)), ylab=expression(paste('Estimated ', beta)), main='B')
-axis(side=1, at=1, labels='', tck=0.035, col=2,lwd=2)
-arrows(x0=1.5, x1=5, y0=0.5, y1=1.5, xpd=TRUE, length=0.05,col=2,lwd=2, code=1)
-text(x=5.2, y=1.6, labels=expression(paste('Assumed ', gamma)), xpd=TRUE, pos=4)  
+axis(side=1, at=1, labels='', tck=0.035, col=3,lwd=2)
+arrows(x0=1.5, x1=4, y0=0.5, y1=2.3, xpd=TRUE, length=0.05,col=3,lwd=2, code=1)
+text(x=3.2, y=2.5, labels=expression(paste('Assumed ', gamma)), xpd=TRUE, pos=4, col=3)  
+
 abline(h=1, lty=2, col=2, lwd=2)
-legend('topleft', expression(paste('True ', beta)), bty='n', lty=c(2), col=2)
+legend(6, 2.5, expression(paste('True ', beta)), bty='n', lty=c(2), col=2)
 
 plot(gammas,estimated_phis3, bty='l', xlab=expression(paste('True ', gamma)), ylab=expression(paste('Estimated ', phi)), main='C')
 abline(h=1, lty=2, col=2, lwd=2)
