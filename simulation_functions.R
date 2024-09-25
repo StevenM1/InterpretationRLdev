@@ -62,7 +62,7 @@ ll_func <- function(pars, pnames, rewards, choices, min.like=1e-20, constants=NU
   gamma <- pars[['gamma']]
   
   ## emcAdapt is a self-written library that implements an RL update loop in C -- allows for quick updating
-  updated <- emcAdapt::adapt.c.emc(rewards*gamma, arguments=list(startValues=c(0,0), learningRates=matrix(alpha, nrow=nTrials, ncol=2)))
+  updated <- emcAdapt::adapt.c.emc(rewards*gamma, arguments=list(startValues=c(0,0), learningRates=matrix(alpha, nrow=nrow(rewards), ncol=2)))
   Q <- updated$adaptedValues
   PEs <- updated$predictionErrors
   
